@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lord of Weather
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=device_thermostat,humidity_mid,mood" />
+</head>
+<main>
+    <h1>The Lord of Weather</h1>
+    <audio id="weather-audio" autoplay src="./public/nubel-cisneros-song.mp3"></audio>
+    <div class="weather-description">
+        <p>Enter a valid city name to get the current weather information.</p>
+        <form>
+            <input required type="text" id="city-input" placeholder="Enter city name">
+            <select id="group-unit-input" placeholder="Enter Unit (metric/imperial)">
+                <option value="metric">Metric (Celsius)</option>
+                <option value="imperial">Imperial (Fahrenheit)</option>
+            </select>
+            <button id="get-weather-btn">Get Weather</button>
+        </form>
+        <div id="weather-result">
+            <div class="temperature-container">
+                <span class="temperature-value"></span><span class="material-symbols-outlined">
+                    device_thermostat
+                </span>
+            </div>
+            <div class="humidity-container">
+                <span class="humidity-value"></span><span class="material-symbols-outlined">
+                    humidity_mid
+                </span>
+            </div>
+            <div class="feelslike-container">
+                <span class="feelslike-value"></span><span class="material-symbols-outlined">
+                    mood
+                </span>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<body>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

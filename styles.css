@@ -1,0 +1,41 @@
+@import "node_modules/@picocss/pico/css/pico.classless.min.css";
+
+#weather-result {
+  display: none;
+}
+h1,
+.weather-description p {
+  text-shadow: 1px 1px 2px black;
+  color: white;
+}
+body {
+  background-image: url(../public/the-lord-of-weather.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+form {
+  max-width: 218px;
+}
+.weather-description {
+  width: auto;
+}
+.temperature-container,
+.humidity-container,
+.feelslike-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  display: inline-block;
+  vertical-align: middle;
+}
